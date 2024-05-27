@@ -1,0 +1,21 @@
+export seluruh yang dibutuhkan
+1.cek JAVA_HOME
+update-alternatives --config java
+
+2.Menambahkan JAVA_HOME ke dalam environment.
+sudo code /etc/environment
+
+3.Tambahkan path lokasi java ke environment(sesuaikan dengan perangkat masing-masing):
+JAVA_HOME="/lib/jvm/java-11-openjdk-amd64/bin/java"
+
+
+ketik perintah code ~/.bashrc
+tambahkan file dibawah ini:
+
+export JAVA_HOME=/usr/lib/jvm/jdk-21-oracle-x64/
+export PATH=$JAVA_HOME/bin:$PATH
+export GRADLE=/opt/Android/gradle
+export PATH=$GRADLE/bin:$PATH
+
+export ANDROID_HOME=/opt/Android/sdk
+export PATH=$ANDROID_HOME/cmdline-tools/tools/bin:$PATH
